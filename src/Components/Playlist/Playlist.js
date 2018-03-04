@@ -8,11 +8,11 @@ class Playlist extends React.Component {
   }
 
   render () {
-    return(
-      <div className="Playlist">
-        <input value="New Playlist"/>
+    return (
+      <div className='Playlist'>
+        <input value='New Playlist' />
         {/* Add a TrackList component */}
-        <a className="Playlist-save" defaultValue={'New Playlist'}>SAVE TO SPOTIFY</a>
+        <a className='Playlist-save' defaultValue={'New Playlist'}>SAVE TO SPOTIFY</a>
       </div>
     )
   }
