@@ -9,11 +9,6 @@ class Playlist extends React.Component {
 
   }
 
-  savePlaylist () {
-    let trackUris = this.state.playlistTracks
-
-  }
-
   handleNameChange (event) {
     this.props.onNameChange(event.target.value)
   }

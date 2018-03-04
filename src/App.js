@@ -13,6 +13,7 @@ class App extends React.Component {
     this.removeTrack = this.removeTrack.bind(this)
     this.updatePlaylistName = this.updatePlaylistName.bind(this)
     this.savePlaylist = this.savePlaylist.bind(this)
+    this.search = this.search.bind(this)
 
     this.state = {
       searchResults: [
@@ -26,6 +27,11 @@ class App extends React.Component {
         {name: 'j', artist: 'k', album: 'l'}
       ]
     }
+  }
+
+  savePlaylist() {
+    const trackUris = this.state.playlistTracks
+
   }
 
   addTrack (track) {
@@ -42,6 +48,10 @@ class App extends React.Component {
 
   updatePlaylistName (name) {
     this.setState({playlistName: name})
+  }
+
+  search (term) {
+    console.log(term)
   }
 
   render () {
