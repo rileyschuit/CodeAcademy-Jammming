@@ -11,6 +11,7 @@ class App extends React.Component {
 
     this.addTrack = this.addTrack.bind(this)
     this.removeTrack = this.removeTrack.bind(this)
+    this.updatePlaylistName = this.updatePlaylistName.bind(this)
 
     this.state = {
       searchResults: [
@@ -18,7 +19,7 @@ class App extends React.Component {
         {name: 'd', artist: 'e', album: 'f'}
       ],
 
-      playlistName: 'mysplaylistName',
+      playlistName: 'myfancyplaylistName',
       playlistTracks: [
         {name: 'g', artist: 'h', album: 'i'},
         {name: 'j', artist: 'k', album: 'l'}
@@ -36,6 +37,10 @@ class App extends React.Component {
     let ExistingTracks = this.state.playlistTracks
     ExistingTracks = ExistingTracks.filter(currentTrack => currentTrack.id !== track.id)
     this.setState({ playlistTracks: ExistingTracks })
+  }
+
+  updatePlaylistName (name) {
+    this.setState({playlistName: name})
   }
 
   render () {
