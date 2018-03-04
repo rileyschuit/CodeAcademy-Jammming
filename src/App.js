@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 
-// import SearchBar from './Components/SearchBar/SearchBar'
+import SearchBar from './Components/SearchBar/SearchBar'
 import SearchBarResults from './Components/SearchResults/SearchResults'
 import Playlist from './Components/Playlist/Playlist'
 
@@ -29,9 +29,8 @@ class App extends React.Component {
     }
   }
 
-  savePlaylist() {
+  savePlaylist () {
     const trackUris = this.state.playlistTracks
-
   }
 
   addTrack (track) {
