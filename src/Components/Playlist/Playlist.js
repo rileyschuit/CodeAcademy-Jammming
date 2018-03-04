@@ -6,6 +6,12 @@ class Playlist extends React.Component {
   constructor (props) {
     super()
     this.handleNameChange = this.handleNameChange.bind(this)
+
+  }
+
+  savePlaylist () {
+    let trackUris = this.state.playlistTracks
+
   }
 
   handleNameChange (event) {
@@ -17,7 +23,11 @@ class Playlist extends React.Component {
       <div className='Playlist'>
         <input onChange={this.handleNameChange} defaultValue={'New "Mix Tape" ;-)'} />
         {/* Add a TrackList component */}
-        <a className='Playlist-save' defaultValue={'New Playlist'}>SAVE TO SPOTIFY</a>
+        <a className='Playlist-save'
+          onClick={this.props.onSave}
+          defaultValue={'New Playlist'}>
+          SAVE TO SPOTIFY
+        </a>
       </div>
     )
   }
