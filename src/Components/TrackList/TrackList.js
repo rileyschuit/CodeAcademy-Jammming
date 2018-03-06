@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './TrackList.css'
+import './tracklist.css'
 import Track from '../Track/Track'
 
 export default class TrackList extends Component {
@@ -18,6 +18,3 @@ export default class TrackList extends Component {
     )
   }
 }
-
-// this is a sanity check
-// export default TrackList

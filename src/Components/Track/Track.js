@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Track.css'
+import './track.css'
 
 class Track extends Component {
   constructor (props) {
