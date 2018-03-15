@@ -17,6 +17,7 @@ A couple of ideas to increasing efficiency would be:
 
 <h5>TECHNICAL DESIGN</h5>  
 In an unordered list to help this display correctly in github:  
+
  - Enter Key and/or Shift Key + Enter:  Upon first seeing our application the user will jump to the existing SearchBar component due to no presented information upon first visit.  No additional requirements would need to be fulfilled.  Initial proposal would be to interact with the user to look for these key presses while inside of this component.  
  - Search for an existing playlist:  This would need some refactoring to include ether a search button that would bind with a function that could return a possible finding.  The feedback would need some error message if nothing was found.  The requester of this feature would like to see this a error message in the TrackList component versus and alert.  
  - Saving playlist upon shortcut key of Ctrl+S or Command+S:  A feature like this would need to think about how multiple OSs (operation systems) interact with the web browser.  Using the “command” key in macOS/OSX is usually a OS level interaction with the application.   Ctrl is probably a more normal interaction with Windows and Linux OSs.
